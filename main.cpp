@@ -45,16 +45,6 @@ void push(Stack &s, Node* p)
     }
 }
 
-void printfStack(Stack s)
-{
-    cout << "Stack = Top <     ";
-    for (Node* p = s.pTop; p != NULL; p=p->pNext)
-    {
-        cout << p->data << "    ";
-    }
-    cout << ">" << endl;
-}
-
 int pop(Stack& s)
 {
     if (s.pTop == NULL)
